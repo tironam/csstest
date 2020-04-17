@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 90%;
+      height: 1000px;
+      margin: auto;
+      border: 5px solid black;
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr ;
+      grid-template-rows: 1fr 5fr 1fr;
+      grid-gap: 10px;
+    }
+
+.navbar {
+  background-color: darkblue;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+}
+.about {
+  background-color: rgb(194, 194, 194);
+grid-column: 1 / span 2;
+grid-row: 2 / span 1;
+}
+
+.links{
+  background-color: rgb(194, 194, 194);
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+.footer {
+  background-color: rgb(92, 92, 92);
+  grid-column: 1 /span 3;
+  grid-row: 3 / span 1;
+}
+  </style>
+</head>
+<body>
+  <div  class="container">
+    <div class="navbar">
+      <h1>navbar</h1>
+    </div>
+    <section class="about">
+      <h1>about</h1>
+    </section>
+    <aside class="links">
+      <h1>my links</h1>
+    </aside>
+    <footer class="footer">
+      <h1>my footer</h1>
+    </footer>
+  </div>
+</body>
+</html>
